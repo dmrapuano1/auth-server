@@ -8,7 +8,7 @@ module.exports.getAccessToken = async (event) => {
     + '?client_id=i67qnj61hami3bb3q1c50vkai2'
     + '&client_secret=e4e6v78cpm12ial54qhvlqrekf'
     + '&grant_type=authorization_code'
-    + '&redirect_uri=https://dmrapuano1.github.io/meetup/'
+    + '&redirect_uri=https://dmrapuano1.github.io/meetup_application/'
     + '&code=' + event.pathParameters.code;
 
   const info = await axios.post(MEETUP_OAUTH_URL);
